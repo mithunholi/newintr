@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="defaultTmpl.definition"
+		template="/WEB-INF/views/defaultTmpl/defaultTmpl.jsp">
+		<put-attribute name="title" value="Model Project"></put-attribute>
+		<put-attribute name="header"
+			value="/WEB-INF/views/defaultTmpl/header.jsp"></put-attribute>
+		<put-attribute name="body"></put-attribute>
+		<put-attribute name="footer"
+			value="/WEB-INF/views/defaultTmpl/footer.jsp"></put-attribute>
+	</definition>
+	<!-- Json Body -->
+	<definition name="jsonTmpl.definition" template="/WEB-INF/views/jsonTmpl/jsonTmpl.jsp">
+		<put-attribute name="body" value="" />
+	</definition>
+	<!-- Dashboard Tpl -->
+	<definition name="dashboardTmpl.definition"
+		template="/WEB-INF/views/dashboardTmpl/dashboardTmpl.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/dashboardTmpl/header.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/dashboardTmpl/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/dashboardTmpl/footer.jsp" />
+	</definition>
+	<!--Dashboard Tpl Body only page -->
+	<definition name="dashboardBodyTmpl.definition"
+		template="/WEB-INF/views/dashboardTmpl/dashboardBodyTmpl.jsp">
+		<put-attribute name="body" value="" />
+	</definition>
+	<!-- Default Body Template -->
+	<definition name="defaultBodyTmpl.definition"
+		template="/WEB-INF/views/defaultTmpl/defaultBodyTmpl.jsp">
+		<put-attribute name="body" value="" />
+	</definition>
+
+
+
+
+	<definition name="index" extends="defaultTmpl.definition">
+		<put-attribute name="title" value="Model Project | Home" />
+		<put-attribute name="body" value="/WEB-INF/views/Index/index.jsp" />
+	</definition>
+	<definition name="login" extends="defaultTmpl.definition">
+		<put-attribute name="title" value="Model Project | Home" />
+		<put-attribute name="body" value="/WEB-INF/views/Auth/login.jsp" />
+	</definition>
+	<!-- login body only page -->
+	<definition name="active_fail" extends="defaultBodyTmpl.definition">
+		<put-attribute name="body" value="/WEB-INF/views/Auth/activeFail.jsp" />
+	</definition>
+	<!-- login body only page -->
+	<definition name="emailSuccess" extends="defaultBodyTmpl.definition">
+		<put-attribute name="body" value="/WEB-INF/views/Auth/email.jsp" />
+	</definition>
+	<definition name="signup" extends="defaultTmpl.definition">
+		<put-attribute name="title" value="Model Project | Home" />
+		<put-attribute name="body" value="/WEB-INF/views/Auth/signup.jsp" />
+	</definition>
+	<!-- Register -->
+	<definition name="register" extends="defaultBodyTmpl.definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/Register/register.jsp" />
+	</definition>
+	<!-- completed Reg USer body only page -->
+	<definition name="completedReg" extends="defaultTmpl.definition">
+	<!-- <put-attribute name="header"
+			value="" /> -->
+			<!-- /WEB-INF/views/dashboardTmpl/header.jsp -->
+		<put-attribute name="body"
+			value="/WEB-INF/views/Register/completedReg.jsp" />
+	</definition>
+	<!-- register new USer body only page -->
+	<definition name="new_user" extends="defaultTmpl.definition">
+	<!-- <put-attribute name="header"
+			value="" /> -->
+			<!-- /WEB-INF/views/dashboardTmpl/header.jsp -->
+		<put-attribute name="body"
+			value="/WEB-INF/views/Register/newUser.jsp" />
+	</definition>
+	<!-- EMp Dashboard -->
+	<!-- dashboard -->
+	<definition name="empDashboardGet" extends="dashboardTmpl.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Dashboard/dashboardViewAll.jsp" />
+	</definition>
+	<definition name="empDashboardPost" extends="dashboardBodyTmpl.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Dashboard/dashboardViewAll.jsp" />
+	</definition>
+	<!-- employees -->
+	<definition name="employeesGet" extends="dashboardTmpl.definition">
+		<put-attribute name="title" value="Employees---" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Employees/employeesViewAll.jsp" />
+	</definition>
+	<definition name="employeesPost" extends="dashboardBodyTmpl.definition">
+		<put-attribute name="title" value="Employees" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Employees/employeesViewAll.jsp" />
+	</definition>
+	<!-- employees views -->
+	<definition name="empViewInd" extends="dashboardBodyTmpl.definition">
+		<put-attribute name="title" value="Employee-Details" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Employees/employeesViewInd.jsp" />
+	</definition>
+	<definition name="empViewEdit" extends="dashboardBodyTmpl.definition">
+		<put-attribute name="title" value="Employee-Editing" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Employees/employeesViewEdit.jsp" />
+	</definition>
+	<definition name="empViewAdd" extends="dashboardBodyTmpl.definition">
+		<put-attribute name="title" value="Employee-Adding" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Employees/employeesViewAdd.jsp" />
+	</definition>
+	<!-- users -->
+	<definition name="usersGet" extends="dashboardTmpl.definition">
+		<put-attribute name="title" value="Users" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Users/usersViewAll.jsp" />
+	</definition>
+	<definition name="usersPost" extends="dashboardBodyTmpl.definition">
+		<put-attribute name="title" value="Users" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Users/usersViewAll.jsp" />
+	</definition>
+	<!-- users views -->
+	<definition name="usersViewAdd" extends="dashboardBodyTmpl.definition">
+		<put-attribute name="title" value="User-Adding" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Users/usersViewAdd.jsp" />
+	</definition>
+	<definition name="usersViewInd" extends="dashboardBodyTmpl.definition">
+		<put-attribute name="title" value="User-View" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Users/usersViewInd.jsp" />
+	</definition>
+	<definition name="advUsersViewInd" extends="dashboardBodyTmpl.definition">
+		<put-attribute name="title" value="User-View" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Users/advUsersViewInd.jsp" />
+	</definition>
+	<definition name="usersViewEdit" extends="dashboardBodyTmpl.definition">
+		<put-attribute name="title" value="User-Edit" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Users/usersViewEdit.jsp" />
+	</definition>
+	<definition name="usersRoleAdd" extends="dashboardBodyTmpl.definition">
+		<put-attribute name="title" value="Employee-Adding" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Users/usersRoleAdd.jsp" />
+	</definition>
+	<definition name="usersRoleEdit" extends="dashboardBodyTmpl.definition">
+		<put-attribute name="title" value="Employee-Editing" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Users/usersRoleEdit.jsp" />
+	</definition>
+
+<!-- cusers1 -->
+	<definition name="cUsers1Get" extends="dashboardTmpl.definition">
+		<put-attribute name="title" value="CUsers1" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/CUsers1/cUsers1ViewAll.jsp" />
+	</definition>
+	<definition name="cUsers1Post" extends="dashboardBodyTmpl.definition">
+		<put-attribute name="title" value="CUsers1" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/CUsers1/cUsers1ViewAll.jsp" />
+	</definition>
+	<!-- cUsers1 views -->
+	<definition name="cUsers1ViewAdd" extends="dashboardBodyTmpl.definition">
+		<put-attribute name="title" value="User-Adding" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/CUsers1/cUsers1ViewAdd.jsp" />
+	</definition>
+	<definition name="cUsers1ViewInd" extends="dashboardBodyTmpl.definition">
+		<put-attribute name="title" value="User-View" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/CUsers1/cUsers1ViewInd.jsp" />
+	</definition>
+	
+	<definition name="cUsers1ViewEdit" extends="dashboardBodyTmpl.definition">
+		<put-attribute name="title" value="User-Edit" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/CUsers1/cUsers1ViewEdit.jsp" />
+	</definition>
+	<definition name="cUsers1RoleAdd" extends="dashboardBodyTmpl.definition">
+		<put-attribute name="title" value="Employee-Adding" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/CUsers1/cUsers1RoleAdd.jsp" />
+	</definition>
+	<definition name="cUsers1RoleEdit" extends="dashboardBodyTmpl.definition">
+		<put-attribute name="title" value="Employee-Editing" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/CUsers1/cUsers1RoleEdit.jsp" />
+	</definition>
+
+
+	<!-- Responce Json -->
+	<definition name="respJson" extends="jsonTmpl.definition">
+		<put-attribute name="body" value="/WEB-INF/views/Util/respJson.jsp" />
+	</definition>
+	<definition name="fileRespJson" extends="jsonTmpl.definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/Util/fileRespJson.jsp" />
+	</definition>
+</tiles-definitions>
+

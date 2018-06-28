@@ -1,0 +1,86 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+ 
+    <!-- Bootstrap Core CSS -->
+    <link rel="StyleSheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.css" type="text/css">
+    <style type="text/css"></style>
+      <!-- Custom Fonts -->
+    <link href="${pageContext.request.contextPath}/resources/css/font-awesome.css" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <!-- jQuery -->
+    <script src="${pageContext.request.contextPath}/resources/js/jquery.js"></script>
+    <!--<script type="text/javascript"><%//@include file="../../js/jquery.js"%></script>-->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript"><%//@include file="../../js/bootstrap.min.js"%></script>-->
+   <script src="${pageContext.request.contextPath}/resources/js/jquery.validate.js"></script>
+   
+    <script src="${pageContext.request.contextPath}/resources/js/common.js"></script>
+  
+<div class="col-md-12">
+  <div class="row">
+    <div class="col-md-3"></div>
+	 <div class="col-md-6 content">
+	    
+	    <div id="forg"class="col-md-12 bor">	      
+		   <div class="col-md-12 headline">
+		     <p> 
+			   <b><span style="font-size:18px">ADDNEWUSER</span></b>
+			  
+			  
+		    </p>
+		   </div>
+		   <div class="row">
+		     <div class="col-md-3"></div>
+			 <div class="col-md-6">
+		       <form id="myForm" class="form-horizontal" role="form">                                   
+                  <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                      <input id="username" type="text" class="form-control" name="username" placeholder="Enter username" autofocus/>                                        
+                  </div>
+                  <div id="field1"style="height:25px;color:red"></div>				  
+                  <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                      <input id="password" type="password" class="form-control" name="password" placeholder="password" >
+                  </div>
+                  <div id="field3"style="height:25px;color:red"></div>				  
+                  <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                      <input id="cnfrmpassword" type="password" class="form-control" name="confirmpassword" placeholder="confirmpassword" >
+                  </div>
+                 	<div class="col-md-6">
+					<!-- /.Drop down -->
+		<div class="dropdown fl fl-topLT" style="right:245;">
+		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+		 <i class="fa fa-list-ul"></i> USERLIST
+		    <span class="caret"></span></button>
+		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+		    <li>CEO</li>
+		    <li>DATA ENTRY </li>
+		    <li>MANAGER</li>
+		    <li>GUEST</li>
+		     </ul>
+		</div>
+</div>	
+			
+                  
+				  <div id="field2"style="height:25px;color:red"></div>
+				  				 				  
+				  <div class="form-group"style="margin-left:100px;">
+                  <button type="submit" class="btn btn-lg btn-primary">ADDNEWUSER<i class="fa fa-sign-in"></i></button>
+					</div>
+				     
+			   </form>
+             </div>				   
+             <div class="col-md-3"></div>			 
+           </div>                       				
+			 <div class="col-md-3">
+			</div>
+			<div class="col-sm-12">
+			<span id="respDiv"></span></div>
+			   </div>
+			    
+			 </div>		  		
+	  <div class="col-md-3"></div>
+	</div>
+ </div>

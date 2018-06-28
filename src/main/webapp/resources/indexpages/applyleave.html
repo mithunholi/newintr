@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Apply Leave</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <style>
+  .page{
+ background-color:#ffffff;
+  height: 600px;
+  }
+  .content{
+  height:500px;
+  background-color:#e6e6e6;
+   border:2px solid #0099cc;
+  margin-top:20px;
+  border-radius:10px;
+  }
+  .headline{
+  font-size:30px;
+  margin-top:20px;
+  text-align:center;
+  margin-bottom:20px;
+  }
+  .line{
+   border:1px solid #0099cc;
+  }
+  .field1{
+  margin-top:30px;
+  }
+  .align{
+  text-align:right;
+  }
+  .reason{
+  padding-left:50px;
+  }
+  .alignlft{
+  text-align:left;
+  }
+  </style>
+  </head>
+  <body>
+  <div class="col-md-12 page">
+  <div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+  <div class="col-md-12 content">
+  <div class="row">
+  <div class="col-md-12 headline"><b>Apply Leave</b></div>
+  </div>
+  <div class="col-md-12 line"></div>
+   <form action="mailto:kalai187selvan@gmail.com?cc=mknilophar@gmail.com&subject=Apply For Leave" method="post" enctype="text/plain">
+   <div class="row field1">
+   <div class="col-md-2 align"><b>Start Date </b></div>
+   <div class="col-md-1"><b>:</b></div> 
+   <div class="col-md-2"><input type="date" name="start"></div>
+   <div class="col-md-1"></div>
+   <div class="col-md-2 align"><b>End Date</b></div>
+   <div class="col-md-1"><b>:</b></div>
+   <div class="col-md-2"><input type="date" name="End"></div>
+   </div>
+   <br>
+   <div class="row">
+   <div class="col-md-2 align"><b>Day type</b></div>
+   <div class="col-md-1"><b>:</b></div>
+   <div class="col-md-4"><input type="radio" name="daytype"value="fullday"checked>Fullday
+                         <input type="radio" name="daytype"value="halfday">Halfday
+	</div>
+   </div>
+   <br>
+   <div class="row">
+   <div class="col-md-2 align"><b>Leave Type</b></div>
+   <div class="col-md-1"><b>:</b></div>   
+   <div class="col-md-2">    
+         <select name="leavetype"> 
+	     <option value="Personal Leave"style="color:black">Personal Leave</option>
+         <option value="Medical Leave"style="color:black">Medical Leave</option>		 
+   </select>
+   </div>
+   <div class="col-md-1"></div>
+   <div class="col-md-2 align"><b>No. of Days</b></div>
+   <div class="col-md-1"><b>:</b></div>
+   <div class="col-md-2"><input type="number" name="days"min="1"max="15"></div>
+  </div> 
+  <br><br>
+  <div class="row">
+  <div class="col-md-2 reason"><b>Reason</b></div>
+  <div class="col-md-1"><b>:</b></div>
+  <div><textarea type="text"name="comments"rows="3"cols="50"></textarea></div> 
+   </div><br>
+   <div class="row">
+   <div class="col-md-6 align">
+   <button class="btn btn-danger"type="submit"value="submit"value="submit"><b>Click To Apply</b></button></div>
+   <div class="col-md-1"></div>
+   <div class="col-md-5 alignlft">
+   <button class="btn btn-danger"type="reset"><b>Cancel</b></button></div>
+   </div>
+   </form>
+    <marquee direction="right"style="font-size:20px;color:green"> <b>Only for Testing(work under progress)</b></marquee>
+   <div class="col-md-1"></div>
+   </div>
+   </div>
+<div class="col-md-2"></div>
+  </div>
+   </div>
+   
+  </body>
+  </html>

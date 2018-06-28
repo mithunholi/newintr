@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="calendar.css" />
+  <style>
+  
+  </style>
+</head>
+<body>
+<div class="col-md-12"style=" background-color:#ffffff;height:650px">
+<div class="row">
+<div class="col-md-2"></div>
+<div id="main"class="col-md-8"style="height:600px;border:2px solid #0099cc;margin-top:20px; background-color:#e6e6e6;border-radius:10px">
+ <div class="row">
+ <div class="col-md-5"style="float:left;">
+ <div class="col-md-12"style="font-size:30px;text-align:center;margin-bottom:20px;"><b><u>Profile</u></b></div>
+ <div class="col-md-12" style="text-align:center;margin-bottom:20px">
+ <p><span class="glyphicon glyphicon-user"style="font-size:100px"></span></p>
+ </div>
+ <div class="row">
+    <div class="col-md-5"><b>Name</b></div>
+      <div class="col-md-1"><b>:</b></div>
+         <div class="col-md-5"><b>------------------</b></div>
+ </div>
+<br>
+ <div class="row">
+   <div class="col-md-5"><b>Position</b></div>
+      <div class="col-md-1"><b>:</b></div>
+         <div class="col-md-5"><b>------------------</b></div>
+  </div>     
+<br>
+ <div class="row">
+   <div class="col-md-5"><b>Date Of Joining</b></div>
+    <div class="col-md-1"><b>:</b></div>
+      <div class="col-md-5"><b>------------------</b></div>
+ </div>
+ <br>
+ <div class="row">
+   <div class="col-md-5"><b>Mail Id</b></div>
+     <div class="col-md-1"><b>:</b></div>
+      <div class="col-md-5"><b>------------------</b></div>
+  </div>       
+ <br>
+ <div class="row">
+   <div class="col-md-5"><b>Intra User Id</b></div>
+    <div class="col-md-1"><b>:</b></div>
+     <div class="col-md-5"><b>------------------</b></div>
+ </div> 
+ <br>
+ <a href="index.html"><button type="reset"class="btn btn-danger"style="margin-left:100px">Logout</button></a>
+</div>
+<div id="sign"class="col-md-7"style="float:left;border-left:2px solid #0099cc;height:598px">
+<p style="margin-top:20px;font-size:20px"> <b>Edit Your profile Details :</b></p>
+<form id="proform" class="form-horizontal">
+	   <div class="row">
+         <div class="col-md-4"style="float:left"><label>Name</label></div>
+	     <div class="col-md-1"style="float:left"><label>:</label></div>
+	     <div class="col-md-7"style="float:left">
+	              <div style="margin-bottom: 25px" class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                      <input id="namep" type="text" class="form-control" name="namep"  placeholder="Enter your name">                                        
+                  </div>   
+	     </div>
+       </div>
+	<div class="row">
+    <div class="col-md-4"style="float:left"><label>Position</label></div>
+	<div class="col-md-1"style="float:left"><label>:</label></div>
+	<div class="col-md-7"style="float:left">
+	              <div style="margin-bottom: 25px" class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                      <input id="positionp" type="text" class="form-control" name="positionp" placeholder="Enter your position">                                        
+                  </div>   
+	</div>
+   </div>
+    <div class="row">
+    <div class="col-md-4"style="float:left"><label>Date Of Joining</label></div>
+	<div class="col-md-1"style="float:left"><label>:</label></div>
+	<div class="col-md-7"style="float:left">
+	              <div style="margin-bottom: 25px" class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                      <input id="datep" type="date" class="form-control" name="datep" placeholder="Date of joining">                                        
+                  </div>   
+	</div>
+   </div>
+  <div class="row">
+    <div class="col-md-4"style="float:left"><label>Mail Id</label></div>
+	<div class="col-md-1"style="float:left"><label>:</label></div>
+	<div class="col-md-7"style="float:left">
+	              <div style="margin-bottom: 25px" class="input-group">
+                      <span class="input-group-addon"><strong>@</strong></span>
+                      <input id="mailp" type="email" class="form-control" name="mailp" placeholder="Enter your email">                                        
+                  </div>   
+	</div>
+   </div>
+  <br>
+   <div class="row">
+   <div class="col-md-3"style="float:left"> 
+          <div class="form-group"style="margin-left:100px;">
+                <button type="button" class="btn btn-danger">save </button>
+		  </div>
+   </div>
+    <div class="col-md-3"style="float:left">
+          <div class="form-group"style="margin-left:100px;">
+              <button type="button" class="btn btn-danger"> Cancel</button>
+		 </div>
+	</div>
+   </div>
+  </form>  
+  <p style="margin-top:30px;font-size:20px"><b>Create New Account :</b></p>
+  <p style="margin-left:30px">Don't have an account? <a href="javascript:ajaxCalling('signup.html')"><span style="color:#3366ff"><b>Create now!</b></span></a> </p>
+     <marquee direction="right"style="font-size:20px;color:green"> <b>Only for Testing(work under progress)</b></marquee>
+
+</div> 
+</div>                          
+ </div>
+ </div>
+ <div class="col-md-2"></div>
+</div>
+</div>
+<script>
+function ajaxCalling(url){
+   
+  $.ajax({
+     url:url, 
+     type:"GET",
+   
+     success: function (response) {
+      console.log('hai');
+   $('#sign').html(response);
+    
+   
+     },
+     error: function(xhr, ajaxOptions, thrownError){
+    
+     },
+     timeout : 15000
+   });
+  
+  }
+$(document).ready(function() {
+//to active default page without clicking link
+});
+</script>
+</body>
+</html>	

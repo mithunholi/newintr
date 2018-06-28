@@ -1,0 +1,125 @@
+{
+    "images": [
+        {
+            "image_id": "ABCDEFGHIJ123450",
+            "file_path": "c00000001.bmp",
+            "content": "commercial",
+            "content_type": "campaign",
+            "campaign_id": "4270980jkljl",
+            "campaign_sequence_id": "1/1",
+            "view_distance": "long",
+            "next_image_id": "ABCDEFGHIJ123451",
+            "duration": 40,
+            "uuid": "E12F8916-B208-4E78-B98D-2CBCCAD55148",
+            "major_id": 1,
+            "minor_id": 2,
+	    "latitude" : 37.388607,
+	    "longitude" : -121.984227,
+            "radius": 5,
+            "GPS_res_High": 1
+        },
+        {
+            "image_id": "ABCDEFGHIJ123451",
+            "file_path": "c10000003.bmp",
+            "content": "commercial",
+            "content_type": "campaign",
+            "campaign_id": "abcf09090cnm",
+            "campaign_sequence_id": "1/1",
+            "view_distance": "long",
+            "next_image_id": "ABCDEFGHIJ123452",
+            "duration": 30,
+            "uuid": "E12F8916-B208-4E78-B98D-2CBCCAD55148",
+            "major_id": 1,
+            "minor_id": 2
+        },
+        {
+            "image_id": "ABCDEFGHIJ123452",
+            "file_path": "c10010001.bmp",
+            "content": "commercial",
+            "content_type": "campaign",
+            "campaign_id": "4209cw98041",
+            "campaign_sequence_id": "1/1",
+            "view_distance": "long",
+           
+            "next_image_id": "ABCDEFGHIJ123453",
+            "duration": 40,
+	    "latitude" : 37.388607,
+	    "longitude" : -121.984227,
+            "radius": 2,
+            "GPS_res_High": 1
+        },
+        {
+            "image_id": "ABCDEFGHIJ123453",
+            "file_path": "c11110001.bmp",
+            "content": "commercial",
+            "content_type": "campaign",
+            "campaign_id": "GROUPON01",
+            "campaign_sequence_id": "1/3",
+            "view_distance": "long",
+            "next_image_id": "ABCDEFGHIJ123454",
+            "duration": 40,
+	    "latitude" : 37.388607,
+	    "longitude" : -121.388607,
+            "radius": 20,
+            "GPS_res_High": 1
+        },
+        {
+            "image_id": "ABCDEFGHIJ123454",
+            "file_path": "c11110002.bmp",
+            "content": "commercial",
+            "content_type": "campaign",
+            "campaign_id": "GROUPON01",
+            "campaign_sequence_id": "2/3",
+            "view_distance": "long",
+            "next_image_id": "ABCDEFGHIJ123455",
+            "duration": 40
+        },
+        {
+            "image_id": "ABCDEFGHIJ123455",
+            "file_path": "c11110003.bmp",
+            "content": "commercial",
+            "content_type": "campaign",
+            "campaign_id": "GROUPON01",
+            "campaign_sequence_id": "3/3",
+            "view_distance": "long",
+            "next_image_id": "ABCDEFGHIJ123456",
+            "duration": 40
+        },
+        {
+            "image_id": "ABCDEFGHIJ123456",
+            "file_path": "c22220001.bmp",
+            "content": "commercial",
+            "content_type": "distance",
+            "campaign_id": "abcf09090cnm",
+            "campaign_sequence_id": "1/2",
+            "view_distance": "long",
+            "duration": 60,
+            "uuid": "E12F8916-B208-4E78-B98D-2CBCCAD55148",
+            "next_image_id": "ABCDEFGHIJ123457",
+            "major_id": 1,
+            "minor_id": 2
+        },
+        {
+            "image_id": "ABCDEFGHIJ123457",
+            "file_path": "c22220002.bmp",
+            "content": "commercial",
+            "content_type": "distance",
+            "campaign_id": "abcf09090cnm",
+            "campaign_sequence_id": "1/2",
+            "view_distance": "short",
+            "next_image_id": "ABCDEFGHIJ123458",
+            "duration": 60,
+            "uuid": "E12F8916-B208-4E78-B98D-2CBCCAD55148",
+            "major_id": 1,
+            "minor_id": 2
+        },
+        {
+            "image_id": "ABCDEFGHIJ123458",
+            "file_path": "p10000002.bmp",
+            "content": "personal",
+            "view_distance": "long",
+            "next_image_id": "ABCDEFGHIJ123450",
+            "duration": 100
+        }
+    ]
+}

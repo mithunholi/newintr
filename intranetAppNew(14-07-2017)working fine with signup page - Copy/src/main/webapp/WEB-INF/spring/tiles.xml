@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+<definition name="defaultTmpl.definition"
+		template="/WEB-INF/views/defaultTmpl/defaultTmpl.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/defaultTmpl/header.jsp" />
+		<!-- <put-attribute name="menu" value="/WEB-INF/views/menu.jsp" /> -->
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/defaultTmpl/footer.jsp" />
+	</definition>
+	<definition name="defaultBodyTmpl.definition"
+		template="/WEB-INF/views/defaultTmpl/defaultBodyTmpl.jsp">
+		<put-attribute name="body" value="" />
+	</definition>
+	<definition name="wordpressTmpl.definition"
+		template="/WEB-INF/views/wordpressTmpl/wordpressTmpl.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/wordpressTmpl/header.jsp" />
+		<!-- <put-attribute name="menu" value="/WEB-INF/views/menu.jsp" /> -->
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/wordpressTmpl/footer.jsp" />
+	</definition>
+	<definition name="wordpressBodyTmpl.definition"
+		template="/WEB-INF/views/wordpressTmpl/wordpressBodyTmpl.jsp">
+		<put-attribute name="body" value="" />
+	</definition>
+	
+<definition name="jsonTmpl.definition"
+		template="/WEB-INF/views/jsonTmpl/jsonTmpl.jsp">
+		<put-attribute name="body" value="" />
+	</definition>
+	
+	 <definition name="login" extends="defaultTmpl.definition">
+		<put-attribute name="title" value="Login page" />
+		<put-attribute name="body" value="/WEB-INF/views/Weblogin/login.jsp" />
+	</definition>  
+	
+	 <definition name="signup" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="Login page" />
+		<put-attribute name="body" value="/WEB-INF/views/Registration/signup.jsp" />
+	</definition> 
+	<!-- <definition name="loginGET" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="login page" />
+			<put-attribute name="header"
+			value="/WEB-INF/views/wordpressTmpl/header.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Index/login.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/wordpressTmpl/footer.jsp" />
+	</definition>
+	<definition name="loginPOST" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="login page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Index/login.jsp" />
+	</definition> -->
+	
+	
+	<!-- apply leave -->
+	<definition name="applyleaveGET" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="Leave page" />
+			<put-attribute name="header"
+			value="/WEB-INF/views/wordpressTmpl/header.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Index/applyleave.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/wordpressTmpl/footer.jsp" />
+	</definition>
+	<definition name="applyleavePOST" extends="wordpressBodyTmpl.definition">
+		<put-attribute name="title" value="Leave page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Index/applyleave.jsp" />
+	</definition>
+	
+	<!-- policy -->
+	<definition name="policyGET" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="policy page" />
+			<put-attribute name="header"
+			value="/WEB-INF/views/wordpressTmpl/header.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Index/policy.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/wordpressTmpl/footer.jsp" />
+	</definition>
+	<definition name="policyPOST" extends="wordpressBodyTmpl.definition">
+		<put-attribute name="title" value="policy page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Index/policy.jsp" />
+	</definition>
+	
+	<!-- intraprofile -->
+	<definition name="intraprofileGET" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="Leave page" />
+			<put-attribute name="header"
+			value="/WEB-INF/views/wordpressTmpl/header.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Index/intraprofile.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/wordpressTmpl/footer.jsp" />
+	</definition>
+	
+	<definition name="intraprofilePOST" extends="wordpressBodyTmpl.definition">
+		<put-attribute name="title" value="Leave page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Index/intraprofile.jsp" />
+	</definition>
+	
+	
+	<!-- fullcalender -->
+	<definition name="fullcalendarGET" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="fullcalendar page" />
+			<put-attribute name="header"
+			value="/WEB-INF/views/wordpressTmpl/header.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Index/fullcalendar.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/wordpressTmpl/footer.jsp" />
+	</definition>
+	
+	<definition name="fullcalendarPOST" extends="wordpressBodyTmpl.definition">
+		<put-attribute name="title" value="fullcalendar page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Index/fullcalendar.jsp" />
+	</definition>
+	
+	<!-- monthlyevent -->
+	<definition name="monthlyeventGET" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="monthlyevent page" />
+			<put-attribute name="header"
+			value="/WEB-INF/views/wordpressTmpl/header.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Index/monthlyevent.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/wordpressTmpl/footer.jsp" />
+	</definition>
+	
+	<definition name="monthlyeventPOST" extends="wordpressBodyTmpl.definition">
+		<put-attribute name="title" value="monthlyevent page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Index/monthlyevent.jsp" />
+	</definition>
+	
+	<!-- newsletter -->
+	<definition name="newsletterGET" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="newsletter page" />
+			<put-attribute name="header"
+			value="/WEB-INF/views/wordpressTmpl/header.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Index/newsletter.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/wordpressTmpl/footer.jsp" />
+	</definition>
+	
+	<definition name="newsletterPOST" extends="wordpressBodyTmpl.definition">
+		<put-attribute name="title" value="Leave page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Index/newsletter.jsp" />
+	</definition>
+	
+	<!-- news1 -->
+		<definition name="news1GET" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="News1 page" />
+			<put-attribute name="header"
+			value="/WEB-INF/views/wordpressTmpl/header.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Index/news1.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/wordpressTmpl/footer.jsp" />
+	</definition>
+	
+	<definition name="news1POST" extends="wordpressBodyTmpl.definition">
+		<put-attribute name="title" value="News1 page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Index/news1.jsp" />
+	</definition>
+	
+	<!-- news2 -->
+		<definition name="news2GET" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="News2 page" />
+			<put-attribute name="header"
+			value="/WEB-INF/views/wordpressTmpl/header.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Index/news2.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/wordpressTmpl/footer.jsp" />
+	</definition>
+	
+	<definition name="news2POST" extends="wordpressBodyTmpl.definition">
+		<put-attribute name="title" value="News2 page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Index/news2.jsp" />
+	</definition>
+	
+	<!-- <definition name="applyleave" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="Leave page" />
+		<put-attribute name="body" value="/WEB-INF/views/Index/applyleave.jsp" />
+	</definition>  -->
+	<!-- <definition name="news1" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="Leave page" />
+		<put-attribute name="body" value="/WEB-INF/views/Index/news1.jsp" />
+	</definition> 
+	<definition name="news2" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="Leave page" />
+		<put-attribute name="body" value="/WEB-INF/views/Index/news2.jsp" />
+	</definition>  -->
+	<!-- <definition name="intraprofile" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="Leave page" />
+		<put-attribute name="body" value="/WEB-INF/views/Index/intraprofile.jsp" />
+	</definition> -->
+	
+	<!-- signup -->
+	<definition name="signupnewGET" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="signupnew page" />
+			<put-attribute name="header"
+			value="/WEB-INF/views/wordpressTmpl/header.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Registration/signupnew.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/wordpressTmpl/footer.jsp" />
+	</definition>
+	
+	<definition name="signupnewPOST" extends="wordpressBodyTmpl.definition">
+		<put-attribute name="title" value="signupnew page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Registration/signupnew.jsp" />
+	</definition>
+	
+	
+	<definition name="forget" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="Leave page" />
+		<put-attribute name="body" value="/WEB-INF/views/Auth/forget.jsp" />
+	</definition>
+	
+	
+	<definition name="month1" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="Leave page" />
+		<put-attribute name="body" value="/WEB-INF/views/Index/month1.jsp" />
+	</definition> 
+	
+	
+	<definition name="respJson" extends="jsonTmpl.definition">
+		<put-attribute name="body" value="/WEB-INF/views/Util/respJson.jsp" />
+	</definition>
+	
+	
+	<definition name="index" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="Home page" />
+		<put-attribute name="body" value="/WEB-INF/views/Weblogin/index.jsp" />
+	</definition>
+	
+	
+	<definition name="adduserGET" extends="wordpressTmpl.definition">
+		<put-attribute name="title" value="Leave page" />
+			<put-attribute name="header"
+			value="/WEB-INF/views/wordpressTmpl/header.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Registration/adduser.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/wordpressTmpl/footer.jsp" />
+	</definition>
+	<definition name="adduserPOST" extends="wordpressBodyTmpl.definition">
+		<put-attribute name="title" value="Leave page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/Registration/adduser.jsp" />
+	</definition>
+	
+	
+	
+	
+	
+	<!-- Login views -->
+	<!-- <definition name="loginpage" extends="defaultTmpl.definition">
+		<put-attribute name="title" value="Login page" />
+		<put-attribute name="body" value="/WEB-INF/views/webLogin/login.jsp" />
+	</definition> -->
+	
+	</tiles-definitions>

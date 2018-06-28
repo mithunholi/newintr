@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Newsletter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<!--   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+ 
+  <style>
+  .page{
+background-color:#ffffff;
+ height:100%;
+  }
+.contentt{
+margin-top:2px;
+border-radius:10px;
+ border:2px solid #0099cc; 
+}  
+  .headline{
+  font-size:30px;
+  text-align:center;
+   margin-top:20px;
+   border-bottom:2px solid #0099cc; 
+  }
+  
+  
+  </style>
+  </head>
+<body>
+  <div class="col-md-12 page">
+	
+	  <div class="col-md-12 contentt">
+	  <div class="col-md-12 headline"><b>Newsletter</b></div>
+	  <br>
+	  <div class="col-md-12"></div>
+	  <br><br>
+	   <ul class="pager">
+    <li><a href="javascript:ajaxCall('news1.html')">Previous</a></li>
+    <li><a href="javascript:ajaxCall('news2.html')">Next</a></li>
+  </ul>
+	  <div class="col-md-12" id="slide"> </div>
+	</div>
+</div>
+<script>
+   function ajaxCall(url){
+   
+  $.ajax({
+     url:url, 
+     type:"GET",
+   
+     success: function (response) {
+      console.log('hai');
+   $('#slide').html(response);
+    
+   
+     },
+     error: function(xhr, ajaxOptions, thrownError){
+    
+     },
+     timeout : 15000
+   });
+  
+  }
+$(document).ready(function() {
+//to active default page without clicking link
+ajaxCall('news1.html');
+$('#newdiv').append('<div id="slide"></div>');
+
+ /*only one href we can create here
+ $('#new').click(function(e){
+ $('#link').click();//<a href="first11.html" id="link">it call default home page
+  
+   $.ajax({
+     url:"first11.html", 
+     type:"GET",
+   
+     success: function (response) {
+      console.log('hai');
+   $('#div1').html(response);
+    
+   
+     },
+     error: function(xhr, ajaxOptions, thrownError){
+    
+     },
+     timeout : 15000
+   });
+
+ }); */
+ 
+});
+</script>
+</body>
+</html>
